@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <section class="main-section">
+        <!-- Head Section which have game descrptin -->
+        <div class="header">
+            <h1 class="centering">Rock, Paper, Scissors Game</h1>
+            <div class="description">The game begins so that you select one of these options (paper, rock, scissors)
+                against the computer, where the scissors defeat the paper, the rock defeats the scissors, and the paper
+                defeats the rock. This game has 10 rounds, You can restart the
+                game
+                through the by click on<b> Reset button. </b> Enjoy!!</div>
+        </div>
+
+
+        <!-- Player Section which have image choose of player and score -->
+        <div class="player game">
+            <div class="player-name centering size-1">Player</div>
+            <div class="image centering">
+                <img id="img-0" src="./images/placeholder.jpg" alt="">
+            </div>
+            <div class="selected centering"></div>
+            <div class="centering size-2">Score:<span class="player-score"> 0 </span></div>
+
+        </div>
+
+
+        <!-- Buttons Section which have all button needed for the game -->
+        <div class="buttons">
+            <button class="paper btn"><i class="fa-solid fa-paper-plane"></i></button>
+            <button class="rock btn"><i class="fa-solid fa-hand-fist"></i></button>
+            <button class="scissors btn"><i class="fa-solid fa-scissors"></i></button>
+            <button class="reset btn">Reset</button>
+        </div>
+
+
+        <!-- computer Section which have image choose of computer randomly and score -->
+        <div class="computer game">
+            <div class="computer-name centering size-1">Computer</div>
+            <div class="image centering">
+                <img id="img-1" src="./images/placeholder.jpg" alt="">
+            </div>
+            <div class="comp-select centering"></div>
+            <div class="centering size-2">Score:
+                <span class="comp-score"> 0 </span>
+            </div>
+        </div>
+
+        <!-- Footer Section have final result and times of rounds game  -->
+        <div class="footer centering">
+            Round: <span class="round">1</span>
+        </div>
+
+    </section>
+    <div class="result"></div>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/36335391b9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
